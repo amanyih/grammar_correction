@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLP - Grammar Correction</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>NLP - Grammar Correction</h2>
+        <p>Software - Group 2</p>
+      </div>
+      <div class="form-wrapper">
+        <form action="{{ url_for('predict') }}" method="post">
+          <textarea
+            name="Input_text"
+            placeholder="Enter a sentence or paragraph to correct grammar..."
+            required="required"
+          ></textarea>
+          <button type="submit" class="btn">Correct</button>
+        </form>
+        {% if prediction_text %}
+        <div class="prediction">{{ prediction_text }}</div>
+        {% endif %}
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
