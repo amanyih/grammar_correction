@@ -3,7 +3,7 @@ from happytransformer import HappyTextToText, TTSettings
 
 st.set_page_config(page_title="Grammar Correction Tool", layout="centered")
 
-checkpoint = "amanuelyh/grammar_correction"
+checkpoint = "team-writing-assistant/t5-base-c4jfleg"
 
 @st.cache_resource
 def get_happy_text(model_name):
