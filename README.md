@@ -70,7 +70,7 @@ python model.py
 To run the app locally and access it via an HTML page:
 
 ```bash
-python app.py
+python app_flask.py
 ```
 
 #### **Option 2: Run as a Streamlit App**
@@ -78,7 +78,7 @@ python app.py
 For an interactive Streamlit-based application:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 
 ---
