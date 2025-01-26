@@ -1,15 +1,4 @@
----
-title: Grammar Correction
-emoji: 🦀
-colorFrom: green
-colorTo: blue
-sdk: streamlit
-sdk_version: 1.41.1
-app_file: app.py
-pinned: false
-license: mit
-short_description: Grammar Correction for NLP course
----
+
 
 ---
 
@@ -34,8 +23,8 @@ This repository contains a Grammar Correction tool developed as part of the NLP 
 ### **Step 1: Clone the Repository**
 
 ```bash
-git clone
-cd repo
+git clone https://github.com/amanyih/grammar_correction.git
+cd grammar_correction
 ```
 
 ### **Step 2: Create a Virtual Environment**
